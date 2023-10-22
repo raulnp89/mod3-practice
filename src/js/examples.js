@@ -1,1 +1,0 @@
-addContent("examples", "Examples section");
