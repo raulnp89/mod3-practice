@@ -10,3 +10,16 @@ repetitions(‘list’) // result: “LIiSssTttt”
 repetitions(function) // result: “FUuNnnTtttIiiiiOoooooNnnnnnn”
 
 */
+
+function repetitions(entrada) {
+  let resultado = "";
+  for (let i = 0; i < entrada.length; i++) {
+    resultado += entrada[i].toUpperCase() + entrada[i].toLowerCase().repeat(i);
+  }
+  return resultado;
+}
+
+let entrada = "Codespace";
+let resultado = repetitions(entrada);
+
+showContent(4, resultado);
