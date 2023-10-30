@@ -4,7 +4,6 @@ Muestra el siguiente mensaje con el resultado de contar el número de vocales qu
 “Number of vowels is <result>”
 */
 
-
 const text = "Muestra el siguiente mensaje con el resultado de contar el número de vocales que tiene un string";
 
 let vowels = "aeiouáéíóú";

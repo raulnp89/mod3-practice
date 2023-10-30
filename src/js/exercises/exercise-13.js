@@ -22,3 +22,25 @@ Agrupa en un array las peliculas por categorias:
     }
 ]
 */
+function tipoPelicula() {
+    let categoriesArray = [
+      { category: "Drama", movies: [] },
+      { category: "Action", movies: [] },
+      { category: "Crime", movies: [] },
+      { category: "Biography", movies: [] },
+      { category: "Adventure", movies: [] },
+      { category: "Comedy", movies: [] },
+    ];
+  
+    for (let i = 0; i < categoriesArray.length; i++) {
+      let filtro = movies.filter(
+        (film) => film.category === categoriesArray[i].category
+      );
+  
+      categoriesArray[i].movies = filtro;
+    }
+    return categoriesArray;
+  }
+  
+  showContent(13, tipoPelicula());
+  

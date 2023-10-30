@@ -5,11 +5,17 @@ Muestra el resultado de quitar las vocales a un string que pasamos como parámet
 */
 
 
-let text = "Hi, I am learning Javascript";
-const vowels = "aeiouAEIOU";
-for (let i = 0; i < vowels.length; i++) {
-  const vowel = vowels[i];
-  text = text.replaceAll(vowel, "");
+function showText (text){
+
+  const vowels = "aeiouAEIOU";
+  for (let i = 0; i < vowels.length; i++) {
+    const vowel = vowels[i];
+    text = text.replaceAll(vowel, "");  
+  }
+  return text
 }
 
-showContent(4, text);
+
+
+
+showContent(4, showText("Hi, I am learning Javascript"));

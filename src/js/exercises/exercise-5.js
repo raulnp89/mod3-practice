@@ -22,4 +22,4 @@ function repetitions(entrada) {
 let entrada = "Codespace";
 let resultado = repetitions(entrada);
 
-showContent(4, resultado);
+showContent(5, resultado);

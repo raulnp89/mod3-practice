@@ -6,17 +6,17 @@ que ocupa cada carácter en el abecedario. Para que sea más sencillo, elimina l
 */
 
 function posicionChar(myString) {
-    let modifString = myString.toLowerCase();
-    modifString = modifString.replaceAll(" ", "");
-    const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    const position = [];
-  
-    for (let i = 0; i < modifString.length; i++) {
-      let caracter = modifString[i];
-      let charPosition = alphabet.indexOf(caracter) + 1;
-      position.push(charPosition);
-    }
-    return position;
+  let modifString = myString.toLowerCase();
+  modifString = modifString.replaceAll(" ", "");
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const position = [];
+
+  for (let i = 0; i < modifString.length; i++) {
+    let caracter = modifString[i];
+    let charPosition = alphabet.indexOf(caracter) + 1;
+    position.push(charPosition);
   }
-  
-  showContent(8, posicionChar("Anita lava la tina"));
+  return position;
+}
+
+showContent(8, posicionChar("Anita lava la tina"));
