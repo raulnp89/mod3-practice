@@ -14,3 +14,20 @@ Ejemplo: "Hello world"
 }
 Nota: siempre letras minúsculas y sin tildes (para simplificar)
 */
+function contarLetras(texto) {
+    texto = texto.toLowerCase();
+  
+    const recuento = {};
+  
+    for (let letra of texto) {
+      if (/[a-z]/.test(letra)) {
+        recuento[letra] = (recuento[letra] || 0) + 1;
+      }
+    }
+  
+    return recuento;
+  }
+  
+  const texto = "Hola, que tal";
+  const resultadoo = contarLetras(texto);
+  showContent(19, resultadoo);
